@@ -3,17 +3,17 @@ import { LitElement, html, css } from 'lit';
 
 class TagList extends LitElement {
   static styles = css`
-    .article-tags-module--outer--f7e0f {
+    .Container {
       max-width: 960px;
       margin: 20px auto;
     }
 
-    .article-tags-module--list--a63cc {
+    .Burbur {
       display: flex;
       flex-wrap: wrap;
     }
 
-    .article-tags-module--listItem--f2605 {
+    .Block {
       -webkit-text-size-adjust: 100%;
       -webkit-font-smoothing: antialiased;
       list-style: none;
@@ -37,7 +37,7 @@ class TagList extends LitElement {
       align-items: center;
     }
 
-    .article-tags-module--listItem--f2605:hover {
+    .Block:hover {
       background-color: #f0f0f0;
       color: #0052be;
       text-decoration: underline;
@@ -47,11 +47,21 @@ class TagList extends LitElement {
 
   render() {
     return html`
-      <section class="article-tags-module--outer--f7e0f">
-        <ul class="article-tags-module--list--a63cc">
-          <li class="article-tags-module--listItem--f2605"><a class="tag-module--tag--d9ee2" >Academics</a></li>
-          <li class="article-tags-module--listItem--f2605"><a class="tag-module--tag--d9ee2" >Students</a></li>
-          <!-- Add more tags as needed -->
+      <section class="Container">
+        <ul class="Burbur">
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/academics >Academics</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/students>Students</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/visitors-and-neighbors>Visitors and Neighbors</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/faculty-and-staff >Faculty and Staff</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/business-and-industry>Business and Industry</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/alumni>Alumni</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/university-park>University Park</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/latest-news>Latest News</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/rankings>Rankings</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/impact>Impact</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/global>Global</a></li>
+          <li class="Block"><a class="tag-module--tag--d9ee2" href=https://www.psu.edu/news/global-programs>Global Programs</a></li>
+
         </ul>
       </section>
     `;
